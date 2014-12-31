@@ -2,9 +2,9 @@
 
 Collect nyc coverage from instrumented client-side Mocha tests with PhantomJS
 
-> Collect [istanbul](https://github.com/gotwarlost/istanbul) coverage stats from client-side [Mocha](https://github.com/visionmedia/mocha) tests with [PhantomJS](https://github.com/ariya/phantomjs) using [mocha-phantomjs](https://github.com/metaskills/mocha-phantomjs).
+> Collect [istanbul](https://github.com/gotwarlost/istanbul) coverage stats from client-side [Mocha](http://mochajs.org) tests with [PhantomJS](https://phantomjs.org) using [mocha-phantomjs](https://github.com/metaskills/mocha-phantomjs).
 
-Collects coverage data from a istanbul-instrumented test suite run in the browser and saves it to a .json file for further processing (for example with [gulp-istanbul-json](https://github.com/willembult/gulp-istanbul-json)).
+Collects coverage data from a istanbul-instrumented test suite run in the browser and saves it to a .json file for further processing (for example with [gulp-istanbul-report](https://github.com/willembult/gulp-istanbul-report)).
 
 Works as a hook into mocha-phantomjs. See these discussions for more info: https://github.com/metaskills/mocha-phantomjs/issues/99, https://github.com/metaskills/mocha-phantomjs/pull/113.
 
@@ -27,7 +27,7 @@ phantomjs ./node_modules/mocha-phantomjs/lib/mocha-phantomjs.coffee test-runner.
 ```
 
 ### gulp
-It's more likely you'll run this from [gulp](https://github.com/wearefractal/gulp) with [gulp-mocha-phantomjs](https://github.com/mrhooray/gulp-mocha-phantomjs). The options get passed through using `phantomjs`.
+It's more likely you'll run this from [gulp](http://gulpjs.com) with [gulp-mocha-phantomjs](https://github.com/mrhooray/gulp-mocha-phantomjs). The options get passed through using `phantomjs`.
 
 ```javascript
 var mochaPhantomJS = require('gulp-mocha-phantomjs');
@@ -48,4 +48,4 @@ gulp.task('test', function () {
 Use it with some other plugin to turn the JSON file into a full report. If you use gulp, you could use [gulp-istanbul-json](https://github.com/willembult/gulp-istanbul-json).
 
 ## License
-MIT
+[MIT License](https://raw.githubusercontent.com/willembult/mocha-phantomjs-istanbul/master/LICENSE)
