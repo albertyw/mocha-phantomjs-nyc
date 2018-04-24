@@ -9,7 +9,7 @@ describe('mocha-phantomjs-istanbul', function() {
   var baseDir = path.join(__dirname, '../');
 
   var phantomPath = './node_modules/.bin/phantomjs';
-  var mochaPhantomPath = './node_modules/mocha-phantomjs/lib/mocha-phantomjs.coffee';
+  var mochaPhantomPath = './node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js';
   var hookPath = baseDir + '/index.js';
   var covFile = baseDir + '/test/covFile.json';
 

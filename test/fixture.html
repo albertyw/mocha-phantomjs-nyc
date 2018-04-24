@@ -8,9 +8,14 @@
   <script src="../node_modules/mocha/mocha.js"></script>
   <script>mocha.setup('bdd')</script>
   <script>
-    if (window.mochaPhantomJS) {
+  describe('asdf', function() {
+    it("runs", function() {});
+  });
+  </script>
+  <script>
+    if (window.mocha) {
       window.__coverage__ = {foo:'bar'};
-      mochaPhantomJS.run();
+      mocha.run();
     }
   </script>
 </body>
