@@ -1,5 +1,7 @@
 # mocha-phantomjs-nyc
 
+[ ![Codeship Status for albertyw/mocha-phantomjs-nyc](https://app.codeship.com/projects/d02cc440-29c2-0136-6883-7a2ffe7e1d48/status?branch=master)](https://app.codeship.com/projects/287367)
+
 Collect nyc coverage from instrumented client-side Mocha tests with PhantomJS
 
 > Collect [istanbul](https://github.com/gotwarlost/istanbul) coverage stats from client-side [Mocha](http://mochajs.org) tests with [PhantomJS](https://phantomjs.org) using [mocha-phantomjs](https://github.com/metaskills/mocha-phantomjs).
