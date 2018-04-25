@@ -8,8 +8,13 @@
   <script src="../node_modules/mocha/mocha.js"></script>
   <script>mocha.setup('bdd')</script>
   <script>
-    if (window.mochaPhantomJS) {
-      mochaPhantomJS.run();
+  describe('asdf', function() {
+    it("runs", function() {});
+  });
+  </script>
+  <script>
+    if (window.mocha) {
+      mocha.run();
     }
   </script>
 </body>
